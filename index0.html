@@ -1,55 +1,14 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>index.html</title>
     </head>
     <body>
-        <App></App>
-        <script>
-            class Obj {
-                constructor(real) {
-                    this.object = real
-                }
-                getProperty(prop) {
-                    return this.object[prop]
-                }
-                set text(n) {
-                    this.object.innerText = n
-                }
-                set class(n) {
-                    this.object.className = n
-                }
-            }
-            class Application {
-                constructor(app) {
-                    this.App = app
-                }
-                get body() {
-                    return this.App
-                }
-                set title(newTitle) {
-                    document.querySelector('title').innerText = newTitle
-                }
-                render(obj) {
-                    this.App.appendChild(obj.object)
-                }
-                new(x) {
-                    return new Obj(document.createElement(x))
-                }
-                clear() {
-                    this.App.innerHTML = ''
-                }
-            }
-            let App = document.querySelector('App');
-            let app = new Application(App);
-            app.clear() // prevent content from being rendered on run
-            app.title = 'Hello, world!'
+        <style>
 
-            let p = app.new('p')
-            p.text = 'come back later lol'
-            app.render(p)
+        </style>
 
+        <Content>
             
-        </script>
+        </Content>
     </body>
 </html>
