@@ -4,12 +4,38 @@
     </head>
     <body>
         <style>
-            h1 {
+            .title {
                 background-color: black;
                 color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                padding-bottom: 2px;
+            }
+            .ch {
+                text-align: center;
+            }
+            .inline {
+                display: inline;
+            }
+            .nodisplay {
+                display:contents;
+            }
+            .highlighted {
+                background-color: yellow;
+                align-content: center;
+                block-size: 16px;
+            }
+            .hid {
+                visibility: hidden;
+            }
+            a {
+                font: 1em sans-serif;
+                color: #000;
+                outline-color: yellow;
+                text-decoration: none;
             }
         </style>
-        <h1>This is my site</h1>
-        <p>Hello, world!</p>
+        <h1 class="title inline">Welcome to my site</h1>
+        <p class="ch inline">These are some projects I've been working on:</p><hr><br>
+        <a href="http://akarii.cf" class="nodisplay">this is a link to a txt file</a>
     </body>
 </html>
